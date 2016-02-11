@@ -34,7 +34,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
 /*
-* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/
 * v2.0 | 20110126
 * License: none (public domain)
 */
@@ -1422,7 +1422,7 @@ p.lang a.active {
   bottom: 15px;
 }
 
-/*  
+/*
  * Skin Gallery
  */
 #swipebox-overlay {
@@ -1546,9 +1546,10 @@ p.lang a.active {
   color: #F8F8F8;
   margin-bottom: 10px;
 }
-#contact-content .contact-item p {
+/* #contact-content .contact-item p */
+div.contact-item > p, div.contact-item > p > strong >a {
   color: #BABABA !important;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 #contact-form {
@@ -2049,7 +2050,7 @@ p.lang a.active {
     bottom: 0;
   }
 
-  /*  
+  /*
    * Skin Gallery
    */
   #swipebox-overlay {
@@ -2183,7 +2184,7 @@ p.lang a.active {
   #navigation ul li a {
     padding: 0.5em 0 !important;
   }
-  #navigation ul li a i {
+  #navigation ul li #i {
     display: none;
   }
 

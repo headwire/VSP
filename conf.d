@@ -22,6 +22,13 @@ server {
         return 403;
     }
 
+###
+location / {
+    root /var/www/VSP;
+    index index.html;
+}
+###
+
     location ~ ^/(images/|scripts/|styles/|fonts/|icons/|favicons/|modules/|index.html|robots.txt|humans.txt|favicon.ico|apple-touch-icon.png|apple-touch-icon-precomposed.png|favicon-16x16.png|favicon-32x32.png) {
 #      root /var/www/dist;
       root /var/www/client/app;

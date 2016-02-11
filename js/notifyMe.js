@@ -7,6 +7,8 @@
     e.fn.notifyMe = function(t) {
         var r = e(this);
         var i = e(this).find("input[name=email]");
+        // var authorValue = e(this).find("input[name=author]");
+
         var s = e(this).attr("action");
         var o = e(this).find(".note");
         e(this).on("submit", function(t) {
@@ -22,7 +24,8 @@
                     type: "POST",
                     url: s,
                     data: {
-                        email: h
+                        email: h //,
+                        // body: b
                     },
                     dataType: "json",
                     error: function(e) {
@@ -64,6 +67,6 @@
         })
     }
 
-    
+
 
 })(jQuery)
