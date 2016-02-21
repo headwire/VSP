@@ -8,7 +8,7 @@ server {
     server_name vsp-construction.com www.vsp-construction.com;
 #    return 301 https://vsp-construction.com$request_uri;
     keepalive_timeout 70;
-    root /var/www/client/app;
+    root /var/www/VSP;
 
     # Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
     location ~ /\. {
@@ -22,16 +22,9 @@ server {
         return 403;
     }
 
-###
-location / {
-    root /var/www/VSP;
-    index index.html;
-}
-###
-
     location ~ ^/(images/|scripts/|styles/|fonts/|icons/|favicons/|modules/|index.html|robots.txt|humans.txt|favicon.ico|apple-touch-icon.png|apple-touch-icon-precomposed.png|favicon-16x16.png|favicon-32x32.png) {
 #      root /var/www/dist;
-      root /var/www/client/app;
+      root /var/www/VSP;
       index index.html;
       access_log off;
       log_not_found off;
@@ -45,6 +38,14 @@ location / {
     proxy_read_timeout 30;
     server_name_in_redirect off;
     charset utf-8;
+
+
+###
+location / {
+    root /var/www/VSP;
+    index index.html;
+}
+###
 
     location / {
         proxy_pass https://nodejs;

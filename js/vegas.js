@@ -14,11 +14,10 @@ $(window).load(function() {
 
         $('#home-part').vegas({
             slides: [
-                { src: 'img/s1.jpg' },
-                { src: 'img/s2.jpg' },
-                { src: 'img/s3.jpg' },
-                { src: 'img/s4.jpg' },
-                { src: 'img/s5.jpg' },
+                { src: 'img/b1.jpg' },
+                { src: 'img/b2.jpg' },
+                { src: 'img/b3.jpg' },
+                { src: 'img/b4.jpg' }
             ],
 
             // Delay beetween slides in milliseconds.
@@ -29,7 +28,7 @@ $(window).load(function() {
         });
 
     }, 1999);
-    
+
 });
 
 (function ($) {
@@ -60,7 +59,7 @@ $(window).load(function() {
         pause: function () {},
         walk:  function () {},
         slides: [
-            // {   
+            // {
             //  src:                null,
             //  color:              null,
             //  delay:              null,
@@ -125,7 +124,7 @@ $(window).load(function() {
         if (this.settings.animationRegister instanceof Array === false) {
             this.settings.animationRegister = [ this.settings.animationRegister ];
         }
-        
+
         this.transitions = this.transitions.concat(this.settings.transitionRegister);
         this.animations  = this.animations.concat(this.settings.animationRegister);
 
@@ -158,7 +157,7 @@ $(window).load(function() {
             // Wrapper with content
             if (!isBody) {
                 this.$elmt.css('height', this.$elmt.css('height'));
-                
+
                 $wrapper = $('<div class="vegas-wrapper">')
                     .css('overflow', this.$elmt.css('overflow'))
                     .css('padding',  this.$elmt.css('padding'));
@@ -245,7 +244,7 @@ $(window).load(function() {
             if (this.total > 1 && !this.paused && !this.noshow) {
                 this.timeout = setTimeout(function () {
                     self.next();
-                }, this._options('delay')); 
+                }, this._options('delay'));
             }
         },
 
@@ -278,7 +277,7 @@ $(window).load(function() {
         },
 
         _video: function (srcs) {
-            var video, 
+            var video,
                 source,
                 cacheKey = srcs.toString();
 
@@ -324,7 +323,7 @@ $(window).load(function() {
             var self   = this,
                 delay  = duration / 10,
                 volume = video.volume + 0.09;
-            
+
             if (volume < 1) {
                 video.volume = volume;
 
@@ -399,7 +398,7 @@ $(window).load(function() {
             }
 
             $slide = $('<div class="vegas-slide"></div>');
-            
+
             if (this.support.transition && transition) {
                 $slide.addClass('vegas-transition-' + transition);
             }
@@ -512,7 +511,7 @@ $(window).load(function() {
                 if (video.readyState === 4) {
                     video.currentTime = 0;
                 }
-                
+
                 video.play();
                 go();
             } else {
@@ -605,8 +604,8 @@ $(window).load(function() {
             if (fn === 'init') {
                 params = [ this.settings ];
             } else {
-                params = [ 
-                    this.slide, 
+                params = [
+                    this.slide,
                     this.settings.slides[this.slide]
                 ];
             }
@@ -627,7 +626,7 @@ $(window).load(function() {
                 if (value === undefined) {
                     return this.settings[key];
                 }
-                this.settings[key] = value; 
+                this.settings[key] = value;
             } else {
                 return this.settings;
             }
@@ -636,12 +635,12 @@ $(window).load(function() {
             if (this.settings.slides !== oldSlides) {
                 this.total  = this.settings.slides.length;
                 this.noshow = this.total < 2;
-                this._preload();   
+                this._preload();
             }
         },
 
         destroy: function () {
-            clearTimeout(this.timeout); 
+            clearTimeout(this.timeout);
 
             this.$elmt.removeClass('vegas-container');
             this.$elmt.find('> .vegas-slide').remove();
@@ -655,7 +654,7 @@ $(window).load(function() {
             if (this.settings.overlay) {
                 this.$overlay.remove();
             }
-            
+
             this.elmt._vegas = null;
         }
     };
