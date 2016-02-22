@@ -2255,19 +2255,31 @@ div.contact-item > p, div.contact-item > p > strong >a {
 
 /*visitka*/
 .visitka {
-  border: 1px solid rgba(255,255,255,0.9);
-  width: 500px;
-  margin: 0 auto;
+  width: 800px;
+  margin-top: -30vh;
   border-radius: 10px;
   padding: 15px;
   background: url(../img/effect_1.png);
-  background-position: -40px -10px;
+  /*background-position: -40px -10px;*/
   background-repeat: no-repeat;
   background-color: rgba(255,255,255,.2);
 }
 .visitka span {
   color: rgba(255,255,255,.9);
   font-weight: 100;
-  text-align: left;
+  text-align: center;
   display: block;
+}
+.visitka-video {
+  border: 1px solid rgba(255,255,255,0.9);
+  width: 800px;
+  /*margin: 0 auto;*/
+  border-radius: 10px;
+  padding: 15px;
+}
+.visitka-video > a > img {
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  /*margin-bottom: 10px;*/
 }
