@@ -383,7 +383,7 @@ function init() {
 
     // Basic options for a simple Google Map
     // The latitude and longitude to center the map (always required)
-    var center = new google.maps.LatLng(49.9610772, 36.1691803);
+    var center = new google.maps.LatLng(49.981796, 36.1865296);
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -553,7 +553,7 @@ function init() {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions, center);
 
     var locations = [
-        ['<h6>Харьков, Григорьевское шоссе 30</h6><p>Здесь находится наш главный офис.<br><i class="fa fa-coffee"></i> Заезжайте на чашечку кофе!</p>', 49.9610772, 36.1691803, 1],
+        ['<h6>Харьков, Григорьевское шоссе 30</h6><p>Здесь находится наш главный офис.', 49.981796, 36.1865296, 1],
         // ['<h6>Coogee Beach, East Coast</h6><p>Opening Hours<br><i class="fa fa-clock-o"></i> 8:00 to 22:00</p>', 40.66810, -73.94480, 5],
         // ['<h6>Cronulla Beach, East Coast</h6><p>Opening Hours<br><i class="fa fa-clock-o"></i> 10:00 to 20:00</p>', 40.80427, -74.01208, 3],
     ];
