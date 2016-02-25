@@ -1260,6 +1260,9 @@ p.lang a.active {
   color: #00c8aa;
 }
 
+div#about-content p, div#contact-content p {
+    text-align: justify;
+}
 /* ===== Portfolio ===== */
 .portfolio {
   overflow: hidden;
