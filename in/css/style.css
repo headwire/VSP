@@ -1456,8 +1456,8 @@ blockquote { border-color: #f7c51e; }
 
 .push-down-60 { margin-bottom: 60px; }
 
-.master-container { overflow: hidden; margin-bottom: 30px; }
-@media (min-width: 992px) { .master-container { margin-bottom: 60px; } }
+.master-container { overflow: hidden; margin-bottom: 0px; }
+@media (min-width: 992px) { .master-container { margin-bottom: 0px; } }
 
 .align-right { text-align: right; }
 
@@ -1545,9 +1545,9 @@ blockquote { border-color: #f7c51e; }
 .main-title--small .main-title__secondary::before { display: none; }
 
 /* 05.04. Breadcrumbs */
-.breadcrumbs { box-shadow: 0 2px 2px #e6e6e6; font-size: 10px; margin-bottom: 30px; }
+.breadcrumbs { box-shadow: 0 2px 2px #e6e6e6; font-size: 10px; margin-bottom: 10px; }
 @media (min-width: 480px) { .breadcrumbs { font-size: 12px; } }
-@media (min-width: 992px) { .breadcrumbs { margin-bottom: 60px; } }
+@media (min-width: 992px) { .breadcrumbs { margin-bottom: 20px; } }
 .breadcrumbs--page-builder { margin-bottom: 0; }
 .breadcrumbs a { position: relative; display: inline-block; padding: 10px 0; font-weight: bold; color: #666666; padding-right: 10px; margin-right: 10px; font-size: 10px; }
 @media (min-width: 480px) { .breadcrumbs a { padding: 14px 0; padding-right: 20px; margin-right: 20px; font-size: 12px; } }
@@ -1697,11 +1697,11 @@ blockquote { border-color: #f7c51e; }
 .carousel-control.right .fa-angle-right { padding-left: 2px; }
 
 /* Slider Content */
-.carousel-content { position: relative; max-height: 100%; z-index: 0; }
-@media (min-width: 992px) { .carousel-content { background: rgba(51, 51, 51, 0.9); position: absolute; padding: 20px; width: 540px; top: 18%; left: calc( 50% - 270px ); } }
-@media (min-width: 1200px) { .carousel-content { top: 20%; width: 500px; left: calc( 50% - 250px ); } }
+.carousel-content { position: relative; max-height: 50%; z-index: 0; }
+@media (min-width: 992px) { .carousel-content { background: rgba(51, 51, 51, 0.9); position: absolute; padding: 20px; width: 540px; bottom: 3%; left: calc( 27% - 270px ); } }
+@media (min-width: 1200px) { .carousel-content { bottom: 3%; width: 500px; left: calc( 27% - 250px ); } }
 @media (min-width: 1450px) { .carousel-content { width: 480px; margin-left: 0; padding: 30px; left: inherit; } }
-@media (min-width: 1700px) { .carousel-content { top: 25%; } }
+@media (min-width: 1700px) { .carousel-content { bottom: 5%; } }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img { width: 100%; }
 
@@ -1801,7 +1801,7 @@ html.flexbox .widget-icon-box .icon-box__text { -webkit-flex-direction: column; 
 .social-icons__link:hover { color: #eeb908; }
 
 /* Banner */
-.banner__text { font-size: 20px; text-align: center; padding: 30px 0 10px 0; }
+.banner__text { font-size: 18px; text-align: center; padding: 30px 0 10px 0; }
 @media (min-width: 992px) { .banner__text { float: left; padding: 23px 0 22px 0; } }
 
 .banner__buttons { text-align: center; padding: 10px 0 30px 0; }
@@ -1840,6 +1840,10 @@ html.flexbox .widget-icon-box .icon-box__text { -webkit-flex-direction: column; 
 /* Motivational Text */
 .motivational-text { margin: 0; text-align: center; font-family: "Montserrat", Helvetica, Arial, sans-serif; color: #ffffff; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12); font-size: 14px; }
 @media (min-width: 992px) { .motivational-text { font-size: 20px; padding: 30px 0; } }
+
+/* Portfolio Header */
+.portfolio-header { margin: 0; text-align: center; font-family: "Montserrat", Helvetica, Arial, sans-serif; color: #ddd; /*text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);*/ font-size: 14px; }
+@media (min-width: 992px) { .portfolio-header { font-size: 20px; padding: 30px 0; } }
 
 /* Featured Page */
 .page-box__picture > img { width: 100%; height: auto; }
@@ -3198,7 +3202,7 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
 	The End :)
 \*------------------------------------*/
 
-body, .textwidget{color:#999}
+body, .textwidget{color:#777}
 .footer{background-color:#f2f2f2}
 .footer{background-image:url(../images/title-area-pattern.png)}
 .footer__headings{color:#3d3d3d}
@@ -3211,7 +3215,7 @@ body, .textwidget{color:#999}
 .slb_details{display:none}
 
 .promo {background-color:#eeeeee; margin-bottom:30px}
-.promobg{padding:30px; background-color:#e8b71f; background-image:url(../images/motivational-background.jpg); background-size:cover}
+.promobg{padding:0px; background-color:#e8b71f; background-image:url(../images/motivational-background.jpg); background-size:cover}
 .spacer {height:30px}
 .spacer-big {height:60px}
 .testimonials-bg{padding:30px;background-color:#eee;background-image:url(../images/title-area-pattern.png);background-repeat:repeat}
