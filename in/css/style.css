@@ -1612,7 +1612,17 @@ blockquote { border-color: #f7c51e; }
 .navigation--top > .menu-item-has-children > a { padding-right: 12px; position: relative; }
 .navigation--top > .menu-item-has-children > a::after { font-family: "FontAwesome"; content: "\f0d7"; color: #999999; position: absolute; right: 0; bottom: calc( 50% - 8px );  bottom: -webkit-calc( 50% - 8px );  bottom: -moz-calc( 50% - 8px );}
 @media (min-width: 992px) { .navigation--top > .menu-item-has-children > a::after { margin-bottom: -2px; } }
-
+/* small arrow fix */
+.banner__text > .navigation--top > .menu-item-has-children > a {
+  color: #1fa7da;
+}
+.banner__text > .navigation--top > .menu-item-has-children > a::after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  color: #1fa7da;
+  position: relative;
+  right: -10px; bottom: -1px;
+}
 
 /* 05.09. Main Navigation */
 
