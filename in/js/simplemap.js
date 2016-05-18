@@ -7,23 +7,6 @@ define( ['jquery', 'underscore'], function ( $, _ ) {
 	 * @link http://snazzymaps.com/style/27/shift-worker
 	 */
 
-	var mapOptions = {
-		latLng:      '0,0',
-		zoom:        5,
-		type:        'ROADMAP',
-		styles:      '',
-		scrollwheel: false,
-		draggable:   true,
-		markers:     [
-			{
-				locationlatlng: '0,0',
-				title:          'demo marker',
-				custompinimage: '',
-			}
-		],
-	};
-
-
 	/**
 	 * Constructor
 	 * @param {jQuery selector} element where to create a map to

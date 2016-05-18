@@ -1,0 +1,36 @@
+/* ------------------------------------- */
+/* *. @Import & Reset .................. */
+/* ------------------------------------- */
+/* http://bourbon.io/ Sass Mixin Library */
+/* custom CSS files */
+/*@import url(bootstrap.min.css);*/
+/* Google Fonts */
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+/* ===== Map ===== */
+#map {
+  height: 780px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  color: #333333 !important;
+}
+#map .gm-style-iw {
+  top: 12px !important;
+}
+#map h6 {
+  font-weight: 500;
+  color: #333333;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+#map p {
+  font-weight: 400;
+  color: #747c83;
+  font-size: 1em;
+  line-height: 1.5;
+}

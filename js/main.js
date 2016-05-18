@@ -32,12 +32,12 @@ $(window).load(function() {
         $("#home-part").removeClass("scale-max").addClass("scale-uni");
         $("#navigation").removeClass("").addClass("fadeInLeft");
 
-    }, 2000);
+    }, 1000);
 
     setTimeout(function() {
         $(".loading-part").addClass("display-none");
         $("#home-part").removeClass("scale-uni").addClass("");
-    }, 3200);
+    }, 2000);
 
 });
 

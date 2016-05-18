@@ -11,10 +11,7 @@ $( document ).ready(function() {
 		}
 	}, 500 ) );
 
-	
-	$( '[data-toggle="tooltip"]' ).tooltip();
-
-
+	// $( '[data-toggle="tooltip"]' ).tooltip();
 
     $("a[data-rel^='prettyPhoto']").prettyPhoto({
         theme: 'pp_default',
@@ -23,12 +20,8 @@ $( document ).ready(function() {
     });
 
 /* ---------------------------------------------------
-	Isotope Portfolio and Blog
+	Isotope Portfolio
 -------------------------------------------------- */
-
-/*-------------------------------------------------*/
-	/* =  portfolio isotope
-	/*-------------------------------------------------*/
 
 	var winDow = $(window);
 		// Needed variables
@@ -55,7 +48,7 @@ $( document ).ready(function() {
 			var selector = $filter.find('li.active a').attr('data-filter');
 
 			try {
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
 					animationOptions: {
 						duration: 750,
@@ -67,21 +60,21 @@ $( document ).ready(function() {
 			}
 			return false;
 		});
-		
-		// Isotope Filter 
+
+		// Isotope Filter
 		$filter.find('li').click(function(){
 			var selector = $(this).find('a').attr('data-filter');
 
 			try {
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
 					 itemSelector: '.project-post',
-					
+
 					animationOptions: {
 						duration: 750,
 						easing	: 'linear',
 						queue	: false,
-						
+
 					}
 				});
 			} catch(err) {
@@ -97,4 +90,5 @@ $( document ).ready(function() {
 			$('.filter li').removeClass('active');
 			$(this).parent().addClass('active');
 		});
-} );
+
+});
