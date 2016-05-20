@@ -54,7 +54,15 @@
 				<div class="collapse navbar-collapse" id="buildpress-navbar-collapse">
 					<ul id="menu-main-menu" class="navigation--main">
 						<li class="current-menu-item"><a href="../index.html">Главная</a></li>
-						<li><a href="#projects">Проекты</a></li>
+						<li class="menu-item-has-children">
+							<a href="#projects">Проекты</a>
+							<ul class="sub-menu">
+								<li><a href="projects/1">Сумской Рынок</a></li>
+								<li><a href="projects/2">Проспект Науки</a></li>
+								<li><a href="projects/3">Проспект Московский</a></li>
+								<li><a href="projects/4">Пр.Московский-ул.Академика Павлова</a></li>
+							</ul>
+						</li>
 						<li><a href="#portfolio">Фото</a></li>
 						<li><a href="map.html">Карта</a></li>
 						<li><a href="#contacts">Контакты</a></li>
@@ -164,19 +172,9 @@
 									<!-- <div class="banner__text">
 										Инновационные технологии и комплексные решения для рельсового полотна.
 									</div> -->
-									<div class="banner__text" style="margin-left: -16px;">
-									<ul id="menu-top-menu" class="navigation--top">
-											<li class="menu-item-has-children"><a href="#">ВСЕ ПРОЕКТЫ</a>
-												<ul class="sub-menu">
-													<li><a href="#">Сумской Рынок</a></li>
-													<li><a href="#">Проспект Науки</a></li>
-													<li><a href="#">Проспект Московский</a></li>
-													<li><a href="#">Проспект Московский - ул.Академика Павлова</a></li>
-												</ul>
-											</li>
-									</ul>
+									<div class="banner__text">
+										<a href="#">Сумской Рынок</a>
 									</div>
-
 									<div class="banner__buttons">
 										<a class="btn btn-primary" href="#portfolio" target="_self">ВСЕ ФОТО</a>&nbsp;
 										<a class="btn btn-default" href="#contacts" target="_self">ПРОЕКТЫ В РАЗРАБОТКЕ</a>
@@ -197,7 +195,12 @@
 				<span typeof="v:Breadcrumb"><span property="v:title">Проекты</span></span>
 			</div>
 		</div>
-
+		<nav class="project__navigation">
+			<ul class="list-unstyled">
+				<li><a href="#" rel="prev"><i class="fa fa-caret-left"></i>&nbsp Предыдущий проект</a></li>
+				<li><a href="#" rel="next">Следующий проект &nbsp<i class="fa fa-caret-right"></i></a></li>
+			</ul>
+		</nav>
 
 	<!-- ОПИСАНИЕ ПРОЕКТА -->
 		<div class="container" role="main">
